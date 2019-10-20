@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /speakers
+---
+
+{% for speaker in site.data.speakers %}
+<h2>
+  <a href="https://github.com/{{ speaker.github }}">
+  {{ speaker.name }}
+  </a>
+</h2>
+<div>
+  {% for p in speaker.bio %}
+    <p>{{ p }}</p>
+  {% endfor %}
+</div>
+{% endfor %}

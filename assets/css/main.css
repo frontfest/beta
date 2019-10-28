@@ -3,7 +3,7 @@
  */
 
 :root {
-    --main-color: maroon;
+    --main-color: black;
 }
 
 @font-face {
@@ -13,6 +13,10 @@
 
 * {
     box-sizing: border-box;
+}
+
+a {
+    color: #AA7700;
 }
 
 html {
@@ -33,6 +37,7 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
+    color: #CC9911;
 }
 
 @media (min-width: 25em) {
@@ -110,13 +115,21 @@ body {
 
 .big-intro .left div {
     background: white;
-    color: var(--main-color);
+    color: black;
     padding: 1rem 1.5rem;
 }
 
 .big-intro .right {
     display: flex;
-    flex-direction: column;    
+    color: #CC9911;
+
+    flex-direction: column;
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .x1 {
@@ -152,7 +165,6 @@ body {
 .flex {
     display: flex;
     align-items: center;
-    border-top: 4px solid var(--main-color);
     border-bottom: 4px solid black;
     justify-content: space-around;
 }
@@ -175,8 +187,8 @@ body {
 }
 
 nav {
-    background-color: var(--main-color);
-    color: white;
+    background-color: white;
+    color: black;
     font-weight: bold;
 }
 
@@ -205,11 +217,11 @@ nav > ul > li > a {
     padding: 1rem;
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav > ul > li > a:hover {
-    background: coral;
+    background: #CC9911;
 }
 
 .social {
@@ -236,7 +248,7 @@ nav > ul > li > a:hover {
 }
 
 .about {
-    padding: 2rem 8rem;
+    padding: 4rem 8rem;
     text-align: center;
     border-top: 4px solid var(--main-color);
     border-bottom: 4px solid var(--main-color);
@@ -259,7 +271,11 @@ nav > ul > li > a:hover {
 
 .venue {
     display: flex;
-    padding: 2rem 8rem;
+    padding: 4rem 8rem;
+}
+
+.venue-left {
+    padding-right: 4rem;
 }
 
 .venue img {
@@ -274,8 +290,11 @@ footer {
     border-top: 4px solid var(--main-color);
 }
 
-footer > div {
+footer > .wrapper {
     background: black;
-    color: white;
     padding: 2rem 8rem;
+}
+
+footer p {
+    color: white;
 }

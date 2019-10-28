@@ -16,7 +16,7 @@
 }
 
 a {
-    color: #AA7700;
+    color: ##FBCB6;
 }
 
 html {
@@ -37,7 +37,7 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
-    color: #CC9911;
+    color: #BD7C78;
 }
 
 @media (min-width: 25em) {
@@ -114,15 +114,14 @@ body {
 }
 
 .big-intro .left div {
-    background: white;
-    color: black;
+    color: white;
+    background-color: #BD7C78;
     padding: 1rem 1.5rem;
 }
 
 .big-intro .right {
     display: flex;
-    color: #CC9911;
-
+    color: #FFBCB6;
     flex-direction: column;
     text-shadow:
     3px 3px 0 #000,

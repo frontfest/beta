@@ -3,15 +3,40 @@ layout: default
 ---
 
 <div class="big-intro">
-    <div class="left">
-        <div class="x5">#FrontFest2020</div>
+    <div class="big-intro-inside">
+
+        <div class="big-intro-inside-top">
+            <div class="left">
+                <div class="claim">
+                    <div>La conferencia para toda la comunidad frontend</div>
+                </div>
+                <div class="logo">
+                    <a href="{% link index.html %}">
+                        <img src="{{ '/assets/img/frontfest.svg' | relative_url }}">
+                    </a>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="line-1">Madrid</div>
+                <div class="line-2">15</div>
+                <div class="line-3">febrero</div>
+                <div class="line-4">2020</div>
+                <div class="line-5"><div>#FrontFest2020</div></div>
+            </div>
+        </div>
+
+        <nav class="big-intro-inside-nav">
+            <ul>
+                <li>Entradas</li>
+                <li>Ponentes</li>
+                <li>Agenda</li>
+                <li>Código de conducta</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
     </div>
-    <div class="right">
-        <div class="x1">Madrid</div>
-        <div class="x2">15</div>
-        <div class="x3">febrero</div>
-        <div class="x4">2020</div>
-    </div>
+
 </div>
 
 <div class="about">
@@ -28,7 +53,7 @@ layout: default
         <p>¡Os esperamos!</p>
     </div>
 
-<!-- <div class="big-menu">
+<div class="big-menu">
     <ol>
         <li>Entradas</li>
         <li>Ponentes</li>
@@ -36,19 +61,21 @@ layout: default
         <li>Código de conducta</li>
         <li>Blog</li>
     </ol>
-</div> -->
+</div>
 
 <div class="venue">
     <div class="venue-left">
         <h2>Localización</h2>
-        <p>FrontFest 2020 tendrá lugar en el Espacio CTO. Está situado en la Calle Albarracín 34 (distrito de San Blas-Canillejas), a escasos metros de la estación de metro de Ciudad Lineal.</p>
+        <p>FrontFest 2020 tendrá lugar en el <strong>Espacio CTO</strong>. Está situado en la <strong>Calle Albarracín 34</strong> (distrito de San Blas-Canillejas), a escasos metros de la estación de metro de Ciudad Lineal (L5).</p>
         <!-- <ul>
             <li>Ver en Google Maps</li>
             <li>Ver en OpenStreetMaps</li>
         </ul> -->
     </div>
     <div class="venue-right">
-        <img src="{{ '/assets/img/cto.jpg' | relative_url }}">
+        <div class="venue-right-img">
+            <img src="{{ '/assets/img/cto.jpg' | relative_url }}">
+        </div>
     </div>
 </div>
 

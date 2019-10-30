@@ -3,7 +3,11 @@
  */
 
 :root {
-    --main-color: black;
+    --light-color: white;
+    --dark-color: black;
+    --primary-color: #FFE7DE;
+    --secondary-color: #BD7C78;
+
 }
 
 @font-face {
@@ -11,48 +15,61 @@
    src: url('../fonts/Blogger_Sans.otf');
 }
 
+@font-face {
+    font-family: 'VoyageFantastique';
+    src: url('../fonts/voyagefantastique.woff2') format('woff2'),
+         url('../fonts/voyagefantastique.ttf') format('ttf');
+ }
+
 * {
     box-sizing: border-box;
 }
 
 a {
-    color: ##FBCB6;
-}
-
-html {
-    font-size: 87.5%;
+    color: var(--dark-color);
 }
 
 p {
-    color: black;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--main-color);
+    color: var(--dark-color);
 }
 
 h1 {
+    color: var(--dark-color);
     font-size: 3rem;
+    font-weight: normal;
+    font-family: 'VoyageFantastique';
 }
 
 h2 {
+    color: var(--dark-color);
     font-size: 2.2rem;
-    color: #BD7C78;
+    font-weight: normal;
+    font-family: 'VoyageFantastique';
 }
 
-@media (min-width: 25em) {
+html {
+    font-size: 62.5%;
+}
+
+@media (min-width: 48rem) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+@media (min-width: 72rem) {
     html {
         font-size: 100%;
     }
 }
 
-@media (min-width: 92em) {
+@media (min-width: 96rem) {
     html {
         font-size: 112.5%;
     }
 }
 
-@media (min-width: 125em) {
+@media (min-width: 125rem) {
     html {
         font-size: 125%;
     }
@@ -60,69 +77,92 @@ h2 {
 
 body {
     font-family: BloggerSans;
-    font-size: 1.2rem;
-    color: var(--main-color);
-    background-color: #eee;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    background-color: #FFE7DE;
 }
 
-.header-date {
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-date div {
-    padding: 1rem 2rem;
-}
-
-.header-date div a {
-    color: white;
-    text-decoration: none;
-}
-
-.header-date div a:hover {
-    text-decoration: underline;
-}
-
-.header-date .title-b {
-    text-align: right;
-}
-
-.logo {
-    /* background: #212; */
-    text-align: center;
-}
+/* HEADER */
 
 .big-intro {
-    font-weight: bold;
+    position: relative;
+    height: 100vh;
+    font-family: 'VoyageFantastique';
+    font-weight: normal;
     display: flex;
     justify-content: space-between;
     text-align: right;
     padding: 4rem 8rem;
     color: white;
-    background: url('../img/calle_alcala.jpg') no-repeat center center;
+
+}
+
+.big-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/calle_alcala.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
+    filter: grayscale(100%);
 }
 
-.big-intro .left {
+.big-intro-inside {
+    width: 100%;
+    position: relative;
     display: flex;
-}
-
-.big-intro .left div {
-    color: white;
-    background-color: #BD7C78;
-    padding: 1rem 1.5rem;
-}
-
-.big-intro .right {
-    display: flex;
-    color: #FFBCB6;
     flex-direction: column;
+}
+
+.big-intro-inside-top {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.big-intro-inside-top .left {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.big-intro-inside-top .left .claim {
+    position: relative;
+    font-family: 'VoyageFantastique';
+    font-weight: normal;
+    font-size: 2.4rem;
+    width: 27rem;
+    border: 4px solid white;
+}
+
+.big-intro-inside-top .left .claim div {
+    position: relative;
+    padding: 0.5rem 1rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    background: #000;
+} 
+
+.big-intro-inside-top .left .logo {
+    margin-top: 2rem;
+}
+
+.big-intro-inside-top .left .logo img {
+    width: 14rem;
+}
+
+.big-intro-inside-top .right {
+    width: 65%;
+    display: flex;
+    color: #FFE7DE;
+    flex-direction: column;
+    justify-content: flex-end;
     text-shadow:
     3px 3px 0 #000,
   -1px -1px 0 #000,  
@@ -131,141 +171,91 @@ body {
     1px 1px 0 #000;
 }
 
-.x1 {
+.big-intro-inside-top .right .line-1 {
     height: 5rem;
     font-size: 5rem;
 }
 
-.x2 {
+.big-intro-inside-top .right .line-2 {
     height: 12rem;
     font-size: 12rem;
 }
 
-.x3 {
+.big-intro-inside-top .right .line-3 {
     height: 5rem;
     font-size: 5rem;
 }
 
-.x4 {
+.big-intro-inside-top .right .line-4 {
     height: 8rem;
     font-size: 8rem;
 }
 
-.x5 {
-    height: 6rem;
+.big-intro-inside-top .right .line-5 {
+    text-shadow: none;
+    display: flex;
+    justify-content: right;
+}
+
+.big-intro-inside-top .right .line-5 div {
+    margin-top: 2rem;
     font-size: 4rem;
+    color: #FFE7DE;
+    background-color: var(--secondary-color);
+    padding: 0.6rem 1.2rem;
 }
 
-.logo img {
-    width: 30rem;
-    margin: 3rem 0;
+.big-intro-inside-nav {
+    margin-top: 2rem;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-    border-bottom: 4px solid black;
-    justify-content: space-around;
-}
-
-.flex .a {
-    font-weight: bold;
-    padding: 2rem 2rem 2rem 8rem;
-    font-size: 3rem;
-    flex-basis: 50%;
-}
-
-.flex .b {
-    text-align: right;
-    padding: 2rem 8rem 2rem 2rem;
-    flex-basis: 50%;
-}
-
-.flex .b img {
-    height: 10rem;
-}
-
-nav {
-    background-color: white;
-    color: black;
-    font-weight: bold;
-}
-
-nav > ul {
-    display: flex;
-    justify-content: space-around;
+.big-intro-inside-nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
-nav > ul > li {
-    text-align: center;;
-    border: 4px solid black;
-    border-top: 0;
-    border-right: 0;
-    flex: 1 1 0px;
-    font-size: 1.5rem;;
-}
-
-nav > ul > li:first-child {
-    border-left: 0;
-}
-
-nav > ul > li > a {
-    padding: 1rem;
-    display: block;
-    text-decoration: none;
+.big-intro-inside-nav ul li {
+    flex-grow: 1;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    padding: 0.6rem 1.2rem;
+    background: white;
     color: black;
 }
 
-nav > ul > li > a:hover {
-    background: #CC9911;
+.big-intro-inside-nav ul li:last-child {
+    border-right: 4px solid black;
 }
 
-.social {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1 1 0px;
-}
-
-.social a {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1 1 0px;
-}
-
-.social img {
-    width: 100%;
-    height: 100%;
-}
-
-.social .tw {
-    background-color: #50ABF1;
-}
-
-.about {
-    padding: 4rem 8rem;
-    text-align: center;
-    border-top: 4px solid var(--main-color);
-    border-bottom: 4px solid var(--main-color);
-}
+/* BIG MENU */
 
 .big-menu {
-    background: var(--main-color);
+    font-family: 'VoyageFantastique';
+    background: #111;
     color: white;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 4rem;
     padding: 2rem 8rem;
-    border-bottom: 4px solid var(--main-color);
-
 }
 
 .big-menu ol {
     list-style-position: inside;
     padding-left: 0;
+}
+
+/* MAIN */
+
+.about {
+    padding: 4rem 8rem;
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
 }
 
 .venue {
@@ -277,23 +267,79 @@ nav > ul > li > a:hover {
     padding-right: 4rem;
 }
 
-.venue img {
-    width: 100%;
+.venue-right .venue-right-img {
+    position: relative;
+    border: 3px solid black;
 }
+
+.venue-right .venue-right-img img {
+    position: relative;
+    top: 1rem;
+    left: 0.8rem;
+    width: 100%;
+} 
 
 .speakers {
     text-align: center;
 }
 
-footer {
-    border-top: 4px solid var(--main-color);
+/* FOOTER */
+
+.footer {
+    border-top: 4px solid var(--primary-color);
 }
 
-footer > .wrapper {
+.footer .footer-wrapper {
     background: black;
     padding: 2rem 8rem;
 }
 
-footer p {
-    color: white;
+.footer p {
+    color: var(--primary-color);
+}
+
+.footer h2 {
+    color: var(--light-color);
+}
+
+.footer a {
+    color: var(--secondary-color);
+}
+
+.footer-nav {
+    background-color: white;
+    color: black;
+    font-family: 'VoyageFantastique';
+    font-weight: normal;
+}
+
+.footer-nav > ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav > ul > li {
+    text-align: center;;
+    border: 4px solid black;
+    border-right: 0;
+    flex: 1 1 0px;
+    font-size: 1.5rem;;
+}
+
+.footer-nav > ul > li:first-child {
+    border-left: 0;
+}
+
+.footer-nav > ul > li > a {
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav > ul > li > a:hover {
+    background: #BD7C78;
 }

@@ -2,25 +2,67 @@
  * CSS
  */
 
-:root {
-    --light-color: white;
-    --dark-color: black;
-    --primary-color: #FFE7DE;
-    --secondary-color: #BD7C78;
-}
-
-@font-face {
-font-family: 'BloggerSans';
+ @font-face {
+    font-family: 'BloggerSans';
     src: url('../fonts/bloggersans.woff2') format('woff2'),
          url('../fonts/bloggersans.otf') format('otf');
     font-weight: normal;
 }
-
+    
 @font-face {
     font-family: 'VoyageFantastique';
     src: url('../fonts/voyagefantastique.woff2') format('woff2'),
          url('../fonts/voyagefantastique.ttf') format('ttf');
     font-weight: normal;
+}
+ 
+:root {
+    --title-font: 'VoyageFantastique';
+    --text-font: 'BloggerSans';
+    --light-color: white;
+    --dark-color: black;
+    --primary-color: #FFE7DE;
+    --secondary-color: #BD7C78;
+    --padding-left-right: 4rem;
+    --padding-top-bottom: 3rem;
+    --padding-top-bottom-small: 2rem;
+    --font-relative-size: 62.5%;
+}
+
+@media (min-width: 48em) {
+    :root {
+        --padding-left-right: 5rem;
+        --padding-top-bottom: 4rem;
+        --padding-top-bottom-small: 3rem;
+        --font-relative-size: 75%;
+    }
+}
+
+@media (min-width: 72em) {
+    :root {
+        --padding-left-right: 6rem;
+        --padding-top-bottom: 5rem;
+        --padding-top-bottom-small: 4rem;
+        --font-relative-size: 87.5%;
+    }
+}
+
+@media (min-width: 96em) {
+    :root {
+        --padding-left-right: 7rem;
+        --padding-top-bottom: 6rem;
+        --padding-top-bottom-small: 5rem;
+        --font-relative-size: 100%;
+    }
+}
+
+@media (min-width: 125em) {
+    :root {
+        --padding-left-right: 8rem;
+        --padding-top-bottom: 6rem;
+        --padding-top-bottom-small: 5rem;
+        --font-relative-size: 112.5%;
+    }
 }
 
 * {
@@ -35,51 +77,31 @@ p {
     color: var(--dark-color);
 }
 
+h1, h2 {
+    margin: 0;
+}
+
 h1 {
     color: var(--dark-color);
     font-size: 3rem;
     font-weight: normal;
-    font-family: 'VoyageFantastique';
+    font-family: var(--title-font);
 }
 
 h2 {
     color: var(--dark-color);
     font-size: 2.2rem;
     font-weight: normal;
-    font-family: 'VoyageFantastique';
+    font-family: var(--title-font);
 }
 
 html {
-    font-size: 62.5%;
-}
-
-@media (min-width: 48rem) {
-    html {
-        font-size: 87.5%;
-    }
-}
-
-@media (min-width: 72rem) {
-    html {
-        font-size: 100%;
-    }
-}
-
-@media (min-width: 96rem) {
-    html {
-        font-size: 112.5%;
-    }
-}
-
-@media (min-width: 125rem) {
-    html {
-        font-size: 125%;
-    }
+    font-size: var(--font-relative-size);
 }
 
 body {
-    font-family: BloggerSans;
-    font-size: 1.4rem;
+    font-family: var(--text-font);
+    font-size: 1.6rem;
     color: var(--dark-color);
     background-color: var(--primary-color);
 }
@@ -87,40 +109,23 @@ body {
 /* HEADER */
 
 .big-intro {
-    position: relative;
     height: 100vh;
-    font-family: 'VoyageFantastique';
+    font-family: var(--title-font);
     font-weight: normal;
-    display: flex;
-    justify-content: space-between;
     text-align: right;
-    padding: 4rem 8rem;
     color: white;
-}
-
-.big-intro::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url('../img/calleAlcalaBW.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: var(--primary-color);
-    filter: grayscale(100%);
-}
-
-.big-intro-inside {
-    width: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .big-intro-inside-top {
+    padding: var(--padding-top-bottom-small) var(--padding-left-right);
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
@@ -135,7 +140,7 @@ body {
 
 .big-intro-inside-top .left .claim {
     position: relative;
-    font-family: 'VoyageFantastique';
+    font-family: var(--title-font);
     font-weight: normal;
     font-size: 2.4rem;
     width: 27rem;
@@ -151,7 +156,7 @@ body {
 } 
 
 .big-intro-inside-top .left .logo {
-    margin-top: 2rem;
+    margin-top: var(--padding-top-bottom-small);
 }
 
 .big-intro-inside-top .left .logo img {
@@ -199,7 +204,7 @@ body {
 }
 
 .big-intro-inside-top .right .line-5 div {
-    margin-top: 2rem;
+    margin-top: var(--padding-top-bottom-small);
     font-size: 4rem;
     background-color: var(--secondary-color);
     padding: 0.6rem 1.2rem;
@@ -215,7 +220,13 @@ body {
 }
 
 .big-intro-inside-nav {
-    margin-top: 2rem;
+    padding: 0;
+}
+
+@media (min-width: 48rem) {
+    .big-intro-inside-nav {
+        padding: 0 var(--padding-left-right) var(--padding-top-bottom-small) var(--padding-left-right);
+    }
 }
 
 /* NAV */
@@ -225,6 +236,8 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    border: 0.2rem solid var(--dark-color);
 }
 
 .nav > ul > li {
@@ -232,15 +245,9 @@ body {
     font-size: 1.6rem;
     font-weight: normal;
     text-align: center;
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
-    border-left: 4px solid black;
     background: white;
     color: black;
-}
-
-.nav > ul > li:last-child {
-    border-right: 4px solid black;
+    border: 0.1rem solid var(--dark-color);
 }
 
 .nav > ul > li > a {
@@ -249,7 +256,7 @@ body {
     height: 100%;
     width: 100%;
     padding: 0.6rem 1.2rem;
-    font-family: 'VoyageFantastique';
+    font-family: var(--title-font);
     color: lightgray;
     cursor: not-allowed;
 }
@@ -267,12 +274,12 @@ body {
 /* BIG MENU */
 
 .big-menu {
-    font-family: 'VoyageFantastique';
+    font-family: var(--title-font);
     color: var(--light-color);
     background: var(--dark-color);
     font-weight: normal;
     font-size: 4rem;
-    padding: 2rem 8rem;
+    padding: var(--padding-top-bottom-small) var(--padding-left-right);
 }
 
 .big-menu ol {
@@ -291,7 +298,7 @@ body {
 /* ABOUT */
 
 .about {
-    padding: 4rem 8rem;
+    padding: var(--padding-top-bottom) var(--padding-left-right);
     text-align: center;
     border-top: 4px solid var(--primary-color);
     border-bottom: 4px solid var(--primary-color);
@@ -301,13 +308,16 @@ body {
 
 .venue {
     display: flex;
-    padding: 4rem 8rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: var(--padding-top-bottom) var(--padding-left-right);
 }
 
 .venue-left {
-    flex-shrink: 0;
-    flex-basis: 33%;
-    padding-right: 4rem;
+    flex-basis: 45%;
+    flex-grow: 1;
+    min-width: 25rem;
+    padding-right: var(--padding-top-bottom);
 }
 
 .venue-left ul {
@@ -315,8 +325,9 @@ body {
 }
 
 .venue-right {
-    flex-shrink: 0;
-    flex-basis: 67%;
+    flex-grow: 1;
+    flex-basis: 55%;
+    min-width: 25rem;
 }
 
 .venue-right .venue-right-img {
@@ -338,13 +349,36 @@ body {
     border-top: 4px solid var(--primary-color);
 }
 
-.footer .footer-wrapper {
+.footer-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: black;
-    padding: 2rem 8rem;
+    padding: var(--padding-top-bottom-small) var(--padding-left-right);
 }
+
+.footer-div-left {
+    flex-grow: 1;
+}
+
+.footer-div-right {
+    width: 3rem;
+}
+
+.footer img {
+    width: 24rem;
+}
+
+
+@media (min-width: 36em) {   
+    .footer-div-right {
+        width: auto;
+    }
+    .footer img {
+        width: 18rem;
+    }
+}
+
 
 .footer p {
     color: var(--primary-color);

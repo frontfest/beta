@@ -22,7 +22,7 @@ title: FrontFest
 email: frontfest@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   La conferencia para toda la comunidad frontend
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://frontfest.es" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: frontfest
 github_username: frontfest

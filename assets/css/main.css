@@ -357,11 +357,12 @@ body {
 }
 
 .footer-div {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: black;
-    padding: var(--padding-top-bottom-small) var(--padding-left-right);
+    padding: var(--padding-top-bottom-small) 0 var(--padding-top-bottom-small) var(--padding-left-right);
 }
 
 .footer-div-left {
@@ -369,7 +370,8 @@ body {
 }
 
 .footer-div-right {
-    width: 3rem;
+    overflow: hidden;
+    width: 7rem;
 }
 
 .footer img {
@@ -377,7 +379,10 @@ body {
 }
 
 
-@media (min-width: 36em) {   
+@media (min-width: 36em) {
+    .footer-div {
+        padding: var(--padding-top-bottom-small) var(--padding-left-right);
+    }
     .footer-div-right {
         width: auto;
     }

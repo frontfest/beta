@@ -28,7 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://frontfest.es" # the base hostname & protocol for your site, e.g. http://example.com
 username: frontfest
 event_details: "Madrid, 15 de febrero de 2020"
-hashtag: "#FrontFest2020"
+hashtag: "#FrontFest20"
 
 # Build settings
 # theme: minima

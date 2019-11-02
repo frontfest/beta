@@ -201,14 +201,24 @@ body {
 .big-intro-inside-top .right .line-5 div {
     margin-top: 2rem;
     font-size: 4rem;
-    color: #FFE7DE;
     background-color: var(--secondary-color);
     padding: 0.6rem 1.2rem;
+}
+
+.big-intro-inside-top .right .line-5 div a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.big-intro-inside-top .right .line-5 div a:hover {
+    color: var(--light-color);
 }
 
 .big-intro-inside-nav {
     margin-top: 2rem;
 }
+
+/* NAV */
 
 .nav > ul {
     list-style-type: none;
@@ -278,7 +288,7 @@ body {
     color: var(--primary-color);
 }
 
-/* MAIN */
+/* ABOUT */
 
 .about {
     padding: 4rem 8rem;
@@ -286,6 +296,8 @@ body {
     border-top: 4px solid var(--primary-color);
     border-bottom: 4px solid var(--primary-color);
 }
+
+/* VENUE */
 
 .venue {
     display: flex;
@@ -319,10 +331,6 @@ body {
     top: 1rem;
     width: 100%;
 } 
-
-.speakers {
-    text-align: center;
-}
 
 /* FOOTER */
 

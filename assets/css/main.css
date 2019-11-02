@@ -354,6 +354,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: black;
+    overflow: hidden;
     padding: var(--padding-top-bottom-small) var(--padding-left-right);
 }
 

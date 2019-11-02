@@ -374,6 +374,7 @@ body {
 
 .footer-div-left {
     flex-grow: 1;
+    padding-right: 2rem;
 }
 
 .footer-div-right {

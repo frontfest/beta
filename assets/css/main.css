@@ -197,20 +197,15 @@ body {
     font-size: 8rem;
 }
 
-.big-intro-inside-top .right .line-5 {
-    text-shadow: none;
-    display: flex;
-    justify-content: right;
-}
-
 .big-intro-inside-top .right .line-5 div {
     margin-top: var(--padding-top-bottom-small);
-    font-size: 4rem;
-    background-color: var(--secondary-color);
-    padding: 0.6rem 1.2rem;
 }
 
 .big-intro-inside-top .right .line-5 div a {
+    font-size: 4rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--secondary-color);
+    text-shadow: none;
     text-decoration: none;
     color: var(--primary-color);
 }

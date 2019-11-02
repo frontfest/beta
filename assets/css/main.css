@@ -127,12 +127,18 @@ body {
 .big-intro-inside-top {
     padding: var(--padding-top-bottom-small) var(--padding-left-right);
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
 }
 
+@media (min-width: 48em) {
+    .big-intro-inside-top {
+        flex-direction: row;        
+    }
+}
+
 .big-intro-inside-top .left {
-    width: 35%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -164,7 +170,6 @@ body {
 }
 
 .big-intro-inside-top .right {
-    width: 65%;
     display: flex;
     color: #FFE7DE;
     flex-direction: column;

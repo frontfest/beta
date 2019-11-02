@@ -172,7 +172,7 @@ body {
 }
 
 .big-intro-inside-top .left .logo img {
-    width: 14rem;
+    width: 20rem;
 }
 
 .big-intro-inside-top .right {
@@ -354,7 +354,43 @@ body {
     margin-left: 0.8rem;
     top: 1rem;
     width: 100%;
+}
+
+/* SPEAKERS */
+
+.speakers {
+    padding: var(--padding-top-bottom) var(--padding-left-right);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 4rem;
+}
+
+.speaker {
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker-pic .speaker-pic-img {
+    position: relative;
+    border: 0.3rem solid black;
+    margin-right: 0.6rem;
+}
+
+.speaker-pic .speaker-pic-img img {
+    position: relative;
+    margin-left: 0.8rem;
+    top: 1rem;
+    width: 100%;
 } 
+
+.speaker-text {
+    margin-top: 1.4rem;
+}
+
+.speaker-text p {
+    margin: 0.8rem 0;
+}
+
 
 /* FOOTER */
 
@@ -410,4 +446,74 @@ body {
 
 .footer a {
     color: var(--secondary-color);
+}
+
+
+
+.header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inner .header-inner-left {
+    padding: 2rem var(--padding-left-right);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.header-inner .header-inner-left .claim {
+    position: relative;
+    font-family: var(--title-font);
+    font-weight: normal;
+    font-size: 2.4rem;
+    width: 28rem;
+    border: 4px solid var(--dark-color);
+}
+
+.header-inner .header-inner-left .claim div {
+    position: relative;
+    padding: 0.5rem 1rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    background: var(--primary-color);
+}
+
+.header-inner .header-inner-left .claim div a {
+    text-decoration: none;
+}
+
+.header-inner .header-inner-left .claim div a:hover {
+    color: var(--secondary-color);
+}
+
+.header-inner .header-inner-left .logo {
+    margin-top: var(--padding-top-bottom-small);
+}
+
+.header-inner .header-inner-left .logo img {
+    width: 20rem;
+}
+
+.header-inner .header-inner-right {
+    padding: 2rem var(--padding-left-right);
+}
+
+.header-inner .header-inner-right > div {
+    font-family: var(--title-font);
+}
+
+.header-inner .header-inner-right > div > a {
+    font-size: 4rem;
+    padding: 1rem 1.2rem;
+    background-color: var(--secondary-color);
+    text-shadow: none;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.header-inner .header-inner-right > div > a:hover {
+    color: var(--light-color);
 }

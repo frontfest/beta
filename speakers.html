@@ -3,15 +3,20 @@ layout: default
 permalink: /speakers
 ---
 
-{% for speaker in site.data.speakers %}
-<h2>
-  <a href="https://github.com/{{ speaker.github }}">
-  {{ speaker.name }}
-  </a>
-</h2>
-<div>
-  {% for p in speaker.bio %}
-    <p>{{ p }}</p>
-  {% endfor %}
-</div>
-{% endfor %}
+<section class="speakers">
+    <h1>Ponentes</h1>
+
+    {% for speaker in site.data.speakers %}
+    <div class="speaker">
+        <div class="speaker-pic">
+            <div class="speaker-pic-img">
+                <img src="{{ '/assets/img/speakers/' | relative_url }}{{ speaker.pic }}">
+            </div>
+        </div>
+        <div class="speaker-text">
+            <h2>{{ speaker.name }}</h2>
+            <p>{{ speaker.desc }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</section>

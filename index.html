@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: main
+permalink: /
 ---
 
 <div class="big-intro">
@@ -29,20 +30,12 @@ layout: default
             </div>
         </div>
 
-        <nav class="big-intro-inside-nav nav">
-            <ul>
-                <li><a>Entradas</a></li>
-                <li><a>Ponentes</a></li>
-                <li><a>Agenda</a></li>
-                <li><a>Código de conducta</a></li>
-                <li><a href="https://blog.frontfest.es">Blog</a></li>
-            </ul>
-        </nav>
+        {%- include nav.html -%}
 
 </div>
 
 <div class="about">
-        <h2>Acerca de FrontFest</h2>
+        <h2>Qué es FrontFest</h2>
         <p>FrontFest es un evento anual y sin ánimo de lucro. Está organizado y gestionado por un equipo de voluntarios y voluntarias que pertenecen a la comunidad de desarrollo frontend.
             Celebrado por primera vez en 2017, pretende ser un punto de encuentro a nivel nacional, principalmente en castellano, para todas aquellas personas interesadas
             en las tecnologías de frontend, donde compartir experiencias y aprender acerca de las nuevas tendencias en el sector. Y por supuesto, acabar divirtiéndose en buena compañía.</p>
@@ -58,7 +51,7 @@ layout: default
 <div class="big-menu">
     <ol>
         <li>Entradas</li>
-        <li>Ponentes</li>
+        <li><a href="{{ '/speakers' | relative_url }}">Ponentes</a></li>
         <li>Agenda</li>
         <li>Código de conducta</li>
         <li><a href="https://blog.frontfest.es">Blog</a></li>

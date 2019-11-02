@@ -1,33 +1,19 @@
 <header>
     
-    <!-- <div class="header-date">
-        <div>15 de febrero de 2020 // Madrid</div>
-        <div>
-            <a href="https://2017.frontfest.es">2017</a> •
-            <a href="https://2018.frontfest.es">2018</a> •
-            <a href="https://2019.frontfest.es">2019</a>
+    <div class="header-inner">
+        <div class="header-inner-left">
+            <div class="claim">
+                <div><a href="{{ '/' | relative_url }}">{{ site.description }}</a></div>
+            </div>
         </div>
-    </div> -->
-    
-    <!-- <div class="flex">
-        <div class="a">
-            La conferencia para toda la comunidad frontend
-        </div>
-        <div class="b">
-            <a href="{% link index.html %}">
-                <img src="{{ '/assets/img/frontfest.svg' | relative_url }}">
-            </a>
-        </div>
-    </div> -->
 
-    <!-- <nav>
-        <ul>
-            <li><a href="">Entradas</a></li>
-            <li><a href="{% link speakers.html %}">Ponentes</a></li>
-            <li><a href="">Agenda</a></li>
-            <li><a href="">CdC</a></li>
-            <li><a href="https://blog.frontfest.es">Blog</a></li>
-        </ul>
-    </nav> -->
+        <div class="header-inner-right">
+            <div>
+                <a target="_blank" rel="noopener" href="https://twitter.com/search?q=%23FrontFest20&src=typed_query">{{ site.hashtag }}</a>
+            </div>
+        </div>
+    </div>
+
+    {%- include nav.html -%}
     
 </header>

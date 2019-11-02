@@ -18,14 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: FrontFest
+title: FrontFest 2020
 email: frontfest@gmail.com
+lang: es
+locale: es_ES
 description: >- # this means to ignore newlines until "baseurl:"
   La conferencia para toda la comunidad frontend
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://frontfest.es" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: frontfest
-github_username: frontfest
+username: frontfest
+event_details: "Madrid, 15 de febrero de 2020"
+hashtag: "#FrontFest2020"
 
 # Build settings
 # theme: minima

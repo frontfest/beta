@@ -109,7 +109,6 @@ body {
 /* HEADER */
 
 .big-intro {
-    height: 100vh;
     font-family: var(--title-font);
     font-weight: normal;
     text-align: right;
@@ -132,7 +131,7 @@ body {
 }
 
 .big-intro-inside-top {
-    padding: var(--padding-top-bottom-small) var(--padding-left-right);
+    padding: var(--padding-top-bottom) var(--padding-left-right);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -181,6 +180,7 @@ body {
     color: #FFE7DE;
     flex-direction: column;
     justify-content: flex-end;
+    padding-top: 8rem;
     text-shadow:
         3px 3px 0 #000,
       -1px -1px 0 #000,
@@ -215,7 +215,7 @@ body {
 
 .big-intro-inside-top .right .line-5 div a {
     font-size: 4rem;
-    padding: 0.6rem 1.2rem;
+    padding: 1rem 1.2rem;
     background-color: var(--secondary-color);
     text-shadow: none;
     text-decoration: none;
@@ -263,7 +263,7 @@ body {
     display: block;
     height: 100%;
     width: 100%;
-    padding: 0.6rem 1.2rem;
+    padding: 1rem 1.2rem;
     font-family: var(--title-font);
     color: lightgray;
     cursor: not-allowed;

@@ -23,8 +23,8 @@
     --dark-color: black;
     --primary-color: #FFE7DE;
     --secondary-color: #BD7C78;
-    --padding-left-right: 4rem;
-    --padding-top-bottom: 3rem;
+    --padding-left-right: 2.5rem;
+    --padding-top-bottom: 4rem;
     --padding-top-bottom-small: 2rem;
     --font-relative-size: 62.5%;
 }
@@ -131,7 +131,7 @@ body {
 }
 
 .big-intro-inside-top {
-    padding: var(--padding-top-bottom) var(--padding-left-right);
+    padding: var(--padding-top-bottom-small) var(--padding-left-right);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -280,7 +280,7 @@ body {
 }
 
 .nav-wrapper {
-    padding-top: 2rem;
+    padding: 2rem var(--padding-left-right);
 }
 
 @media (min-width: 48rem) {
@@ -418,6 +418,10 @@ body {
     padding: var(--padding-top-bottom-small) 0 var(--padding-top-bottom-small) var(--padding-left-right);
 }
 
+.footer-nav {
+    padding: var(--padding-top-bottom-small) var(--padding-left-right);
+}
+
 .footer-div-left {
     flex-grow: 1;
     padding-right: 2rem;
@@ -435,7 +439,7 @@ body {
 
 @media (min-width: 36em) {
     .footer-div {
-        padding: var(--padding-top-bottom-small) var(--padding-left-right);
+        padding: 2.4rem var(--padding-left-right);
     }
     .footer-div-right {
         width: auto;

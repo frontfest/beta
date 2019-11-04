@@ -173,6 +173,7 @@ body {
 
 .big-intro-inside-top .left .logo img {
     width: 20rem;
+    filter: drop-shadow(2px 2px 1px #000);
 }
 
 .big-intro-inside-top .right {
@@ -183,10 +184,10 @@ body {
     padding-top: 8rem;
     text-shadow:
         3px 3px 0 #000,
-      -1px -1px 0 #000,
-       1px -1px 0 #000,
-       -1px 1px 0 #000,
-        1px 1px 0 #000;
+      -3px -3px 0 #000,
+       3px -3px 0 #000,
+       -3px 3px 0 #000,
+        3px 3px 0 #000;
 }
 
 .big-intro-inside-top .right .line-1 {

@@ -440,7 +440,7 @@ body {
 
 @media (min-width: 36em) {
     .footer-div {
-        padding: 2.4rem var(--padding-left-right);
+        padding: 3rem var(--padding-left-right);
     }
     .footer-div-right {
         width: auto;

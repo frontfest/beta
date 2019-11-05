@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: default
 permalink: /
 ---
 
@@ -7,9 +7,6 @@ permalink: /
 
         <div class="big-intro-inside-top">
             <div class="left">
-                <div class="claim">
-                    <div>{{ site.description }}</div>
-                </div>
                 <div class="logo">
                     <a href="{% link index.html %}">
                         <img src="{{ '/assets/img/frontfest.svg' | relative_url }}">
@@ -22,22 +19,15 @@ permalink: /
                 <div class="line-2">15</div>
                 <div class="line-3">febrero</div>
                 <div class="line-4">2020</div>
-                <div class="line-5">
-                    <div>
-                        <a target="_blank" rel="noopener" href="https://twitter.com/search?q=%23FrontFest20&src=typed_query">{{ site.hashtag }}</a>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <div class="big-intro-inside-nav ">
-                {%- include nav.html -%}
-        </div>
+
 
 </div>
 
 <div class="about">
-        <h2>Qué es FrontFest</h2>
+        <h1>Qué es FrontFest</h1>
         <p>FrontFest es un evento anual y sin ánimo de lucro. Está organizado y gestionado por un equipo de voluntarios y voluntarias que pertenecen a la comunidad de desarrollo frontend.
             Celebrado por primera vez en 2017, pretende ser un punto de encuentro a nivel nacional, principalmente en castellano, para todas aquellas personas interesadas
             en las tecnologías de frontend, donde compartir experiencias y aprender acerca de las nuevas tendencias en el sector. Y por supuesto, acabar divirtiéndose en buena compañía.</p>
@@ -50,7 +40,7 @@ permalink: /
         <p>¡Os esperamos!</p>
     </div>
 
-<div class="big-menu">
+<!-- <div class="big-menu">
     <ol>
         <li>Entradas</li>
         <li><a href="{{ '/speakers' | relative_url }}">Ponentes</a></li>
@@ -58,11 +48,13 @@ permalink: /
         <li>Código de conducta</li>
         <li><a href="https://blog.frontfest.es">Blog</a></li>
     </ol>
-</div>
+</div> -->
+
+<hr>
 
 <div class="venue">
     <div class="venue-left">
-        <h2>Localización</h2>
+        <h1>Localización</h1>
         <p>FrontFest 2020 tendrá lugar en el <strong>Espacio CTO</strong>. Está situado en la <strong>Calle Albarracín 34</strong> (distrito de San Blas-Canillejas), a escasos metros de la estación de metro de Ciudad Lineal (L5).</p>
         <ul>
             <li>Ver en <a target="_blank" href="https://www.google.com/maps/place/Grupo+CTO/@40.4344216,-3.6736263,13.25z/data=!4m13!1m7!3m6!1s0xd422f6d446a653f:0xdd140ac6dab87f1b!2sCalle+de+Albarrac%C3%ADn,+34,+28037+Madrid!3b1!8m2!3d40.4345468!4d-3.6327444!3m4!1s0xd4228c15ef7086f:0xfdb769e05ba3b4d4!8m2!3d40.4345829!4d-3.632772">Google Maps</a></li>

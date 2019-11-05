@@ -22,11 +22,11 @@
     --light-color: white;
     --dark-color: black;
     --primary-color: #FFE7DE;
-    --secondary-color: #BD7C78;
+    --secondary-color: #9B4B4C;
     --padding-left-right: 2.5rem;
     --padding-top-bottom: 4rem;
     --padding-top-bottom-small: 2rem;
-    --font-relative-size: 62.5%;
+    --font-relative-size: 75%;
 }
 
 @media (min-width: 48em) {
@@ -58,7 +58,7 @@
 
 @media (min-width: 125em) {
     :root {
-        --padding-left-right: 8rem;
+        --padding-left-right: 16rem;
         --padding-top-bottom: 6rem;
         --padding-top-bottom-small: 5rem;
         --font-relative-size: 112.5%;
@@ -101,7 +101,7 @@ html {
 
 body {
     font-family: var(--text-font);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--dark-color);
     background-color: var(--primary-color);
 }
@@ -109,14 +109,17 @@ body {
 /* HEADER */
 
 .big-intro {
+    padding: 0 var(--padding-left-right);
+    border-bottom: 4px solid black;
+
     font-family: var(--title-font);
     font-weight: normal;
     text-align: right;
     color: white;
-    background-image: url('../img/calleAlcalaBW.jpg');
+    background-image: url('../img/calleAlcalaColor.jpg');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: auto 95%;
+    background-size: cover;
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -128,6 +131,11 @@ body {
         background-position: center center;
         background-size: cover;     
     }
+}
+
+hr {
+    border: 2px solid black;
+    margin: 0 var(--padding-left-right);
 }
 
 .big-intro-inside-top {
@@ -144,31 +152,8 @@ body {
     }
 }
 
-.big-intro-inside-top .left {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.big-intro-inside-top .left .claim {
-    position: relative;
-    font-family: var(--title-font);
-    font-weight: normal;
-    font-size: 2.4rem;
-    width: 28rem;
-    border: 4px solid white;
-}
-
-.big-intro-inside-top .left .claim div {
-    position: relative;
-    padding: 0.5rem 1rem;
-    top: 0.5rem;
-    left: 0.5rem;
-    background: #000;
-} 
-
 .big-intro-inside-top .left .logo {
-    margin-top: var(--padding-top-bottom-small);
+    text-align: left;
 }
 
 .big-intro-inside-top .left .logo img {
@@ -178,10 +163,10 @@ body {
 
 .big-intro-inside-top .right {
     display: flex;
-    color: #FFE7DE;
+    color: white;
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: 8rem;
+    padding-top: 12rem;
     text-shadow:
         3px 3px 0 #000,
       -3px -3px 0 #000,

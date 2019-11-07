@@ -34,7 +34,7 @@
         --padding-left-right: 5rem;
         --padding-top-bottom: 4rem;
         --padding-top-bottom-small: 3rem;
-        --font-relative-size: 75%;
+        --font-relative-size: 87.5%;
     }
 }
 
@@ -116,7 +116,7 @@ body {
     font-weight: normal;
     text-align: right;
     color: white;
-    background-image: url('../img/calleAlcalaColor.jpg');
+    background-image: url('../img/calleAlcalaBW.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;

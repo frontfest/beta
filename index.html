@@ -1,28 +1,28 @@
 ---
-layout: default
+layout: main
 permalink: /
 ---
 
 <div class="big-intro">
 
-        <div class="big-intro-inside-top">
-            <div class="left">
-                <div class="logo">
-                    <a href="{% link index.html %}">
-                        <img src="{{ '/assets/img/frontfest.svg' | relative_url }}">
-                    </a>
-                </div>
-            </div>
+    {%- include header.html -%}
 
-            <div class="right">
-                <div class="line-1">Madrid</div>
-                <div class="line-2">15</div>
-                <div class="line-3">febrero</div>
-                <div class="line-4">2020</div>
+    <div class="big-intro-inside-top">
+        <div class="left">
+            <div class="logo">
+                <a href="{% link index.html %}">
+                    <img src="{{ '/assets/img/frontfest.svg' | relative_url }}">
+                </a>
             </div>
         </div>
 
-
+        <div class="right">
+            <div class="line-1">Madrid</div>
+            <div class="line-2">15</div>
+            <div class="line-3">febrero</div>
+            <div class="line-4">2020</div>
+        </div>
+    </div>
 
 </div>
 

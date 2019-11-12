@@ -31,7 +31,7 @@
 
 @media (min-width: 48em) {
     :root {
-        --padding-left-right: 5rem;
+        --padding-left-right: 6rem;
         --padding-top-bottom: 4rem;
         --padding-top-bottom-small: 3rem;
         --font-relative-size: 87.5%;
@@ -40,7 +40,7 @@
 
 @media (min-width: 72em) {
     :root {
-        --padding-left-right: 6rem;
+        --padding-left-right: 8rem;
         --padding-top-bottom: 5rem;
         --padding-top-bottom-small: 4rem;
         --font-relative-size: 87.5%;
@@ -49,10 +49,10 @@
 
 @media (min-width: 96em) {
     :root {
-        --padding-left-right: 7rem;
+        --padding-left-right: 12rem;
         --padding-top-bottom: 6rem;
         --padding-top-bottom-small: 5rem;
-        --font-relative-size: 100%;
+        --font-relative-size: 87.5%;
     }
 }
 
@@ -109,9 +109,6 @@ body {
 /* HEADER */
 
 .big-intro {
-    padding: 0 var(--padding-left-right);
-    border-bottom: 4px solid black;
-
     font-family: var(--title-font);
     font-weight: normal;
     text-align: right;
@@ -140,6 +137,7 @@ hr {
 
 .big-intro-inside-top {
     padding: var(--padding-top-bottom-small) var(--padding-left-right);
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -166,7 +164,7 @@ hr {
     color: white;
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: 12rem;
+    padding-top: 8rem;
     text-shadow:
         3px 3px 0 #000,
       -3px -3px 0 #000,
@@ -357,7 +355,7 @@ hr {
 .speakers {
     padding: var(--padding-top-bottom) var(--padding-left-right);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     grid-gap: 4rem;
 }
 
@@ -469,8 +467,8 @@ hr {
     position: relative;
     font-family: var(--title-font);
     font-weight: normal;
-    font-size: 2.4rem;
-    width: 28rem;
+    font-size: 2rem;
+    width: 24rem;
     border: 4px solid var(--dark-color);
 }
 
@@ -516,5 +514,17 @@ hr {
 }
 
 .header-inner .header-inner-right > div > a:hover {
+    color: var(--light-color);
+}
+
+.big-intro .header-inner .header-inner-left .claim {
+    border: 4px solid var(--light-color);
+}
+
+.big-intro .header-inner .header-inner-left .claim div {
+    background: var(--dark-color);
+}
+
+.big-intro .header-inner .header-inner-left .claim div a {
     color: var(--light-color);
 }

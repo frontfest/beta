@@ -23,13 +23,13 @@
     --dark-color: black;
     --primary-color: #FFE7DE;
     --secondary-color: #9B4B4C;
-    --padding-left-right: 2.5rem;
+    --padding-left-right: 2rem;
     --padding-top-bottom: 4rem;
     --padding-top-bottom-small: 2rem;
     --font-relative-size: 75%;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 36em) {
     :root {
         --padding-left-right: 6rem;
         --padding-top-bottom: 4rem;
@@ -113,11 +113,7 @@ body {
     font-weight: normal;
     text-align: right;
     color: white;
-    background-image: url('../img/calleAlcalaBW.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -125,8 +121,11 @@ body {
 
 @media (min-width: 48em) {
     .big-intro {
+        background-image: url('../img/calleAlcalaBW.jpg');
         background-position: center center;
-        background-size: cover;     
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
 }
 
@@ -136,7 +135,7 @@ hr {
 }
 
 .big-intro-inside-top {
-    padding: var(--padding-top-bottom-small) var(--padding-left-right);
+    padding: var(--padding-top-bottom) var(--padding-left-right);
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -164,7 +163,7 @@ hr {
     color: white;
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: 8rem;
+    padding-top: 4rem;
     text-shadow:
         3px 3px 0 #000,
       -3px -3px 0 #000,
@@ -229,7 +228,7 @@ hr {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    border: 0.2rem solid var(--dark-color);
+    border: 0.24rem solid var(--dark-color);
 }
 
 .nav > ul > li {
@@ -239,7 +238,7 @@ hr {
     text-align: center;
     background: white;
     color: black;
-    border: 0.1rem solid var(--dark-color);
+    border: 0.12rem solid var(--dark-color);
 }
 
 .nav > ul > li > a {
@@ -452,8 +451,14 @@ hr {
 .header-inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 48em) {
+    .header-inner {
+        justify-content: space-between;
+    }
 }
 
 .header-inner .header-inner-left {
@@ -467,8 +472,8 @@ hr {
     position: relative;
     font-family: var(--title-font);
     font-weight: normal;
-    font-size: 2rem;
-    width: 24rem;
+    font-size: 2.2rem;
+    width: 26rem;
     border: 4px solid var(--dark-color);
 }
 
@@ -505,7 +510,7 @@ hr {
 }
 
 .header-inner .header-inner-right > div > a {
-    font-size: 4rem;
+    font-size: 3.6rem;
     padding: 1rem 1.2rem;
     background-color: var(--secondary-color);
     text-shadow: none;

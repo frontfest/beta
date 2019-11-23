@@ -24,6 +24,7 @@
     --primary-color: #FFE7DE;
     --secondary-color: #9B4B4C;
     --padding-left-right: 2rem;
+    --padding-left-right-small: 4rem;
     --padding-top-bottom: 4rem;
     --padding-top-bottom-small: 2rem;
     --font-relative-size: 75%;
@@ -32,6 +33,7 @@
 @media (min-width: 36em) {
     :root {
         --padding-left-right: 6rem;
+        --padding-left-right-small: 2rem;
         --padding-top-bottom: 4rem;
         --padding-top-bottom-small: 3rem;
         --font-relative-size: 87.5%;
@@ -41,6 +43,7 @@
 @media (min-width: 72em) {
     :root {
         --padding-left-right: 8rem;
+        --padding-left-right-small: 4rem;
         --padding-top-bottom: 5rem;
         --padding-top-bottom-small: 4rem;
         --font-relative-size: 87.5%;
@@ -50,6 +53,7 @@
 @media (min-width: 96em) {
     :root {
         --padding-left-right: 12rem;
+        --padding-left-right-small: 6rem;
         --padding-top-bottom: 6rem;
         --padding-top-bottom-small: 5rem;
         --font-relative-size: 87.5%;
@@ -59,6 +63,7 @@
 @media (min-width: 125em) {
     :root {
         --padding-left-right: 16rem;
+        --padding-left-right-small: 8rem;
         --padding-top-bottom: 6rem;
         --padding-top-bottom-small: 5rem;
         --font-relative-size: 112.5%;
@@ -308,6 +313,42 @@ hr {
     .about {
         text-align: center;
     }
+}
+
+/* SPONSORS */
+
+.sponsors {
+    padding: var(--padding-top-bottom) var(--padding-left-right);
+}
+
+.sponsors h2 {
+    margin-top: 20px;
+}
+
+.sponsors .sponsors-grid {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 40px 10%;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (min-width: 36em) {
+    .sponsors .sponsors-grid {
+        grid-template-columns: repeat(2, 45%);
+    }
+}
+
+.sponsors .sponsors-grid div {
+    border: 4px solid black;
+    background: white;
+    padding: var(--padding-top-bottom-small) var(--padding-left-right-small);
+    width: 100%;
+}
+
+.sponsors .sponsors-grid img {
+    width: 100%;
 }
 
 /* VENUE */

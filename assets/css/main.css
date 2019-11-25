@@ -340,15 +340,18 @@ hr {
     }
 }
 
-.sponsors .sponsors-grid div {
+.sponsors .sponsors-grid a {
     border: 4px solid black;
     background: white;
-    padding: var(--padding-top-bottom-small) var(--padding-left-right-small);
     width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sponsors .sponsors-grid img {
-    width: 100%;
+    width: 80%;
 }
 
 /* VENUE */

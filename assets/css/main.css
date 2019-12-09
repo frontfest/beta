@@ -8,14 +8,14 @@
          url('../fonts/bloggersans.otf') format('otf');
     font-weight: normal;
 }
-    
+
 @font-face {
     font-family: 'VoyageFantastique';
     src: url('../fonts/voyagefantastique.woff2') format('woff2'),
          url('../fonts/voyagefantastique.ttf') format('ttf');
     font-weight: normal;
 }
- 
+
 :root {
     --title-font: 'VoyageFantastique';
     --text-font: 'BloggerSans';
@@ -150,7 +150,7 @@ hr {
 
 @media (min-width: 48em) {
     .big-intro-inside-top {
-        flex-direction: row;        
+        flex-direction: row;
     }
 }
 
@@ -233,7 +233,7 @@ hr {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    border: 0.24rem solid var(--dark-color);
+    border: 2px solid var(--dark-color);
 }
 
 .nav > ul > li {
@@ -243,7 +243,7 @@ hr {
     text-align: center;
     background: white;
     color: black;
-    border: 0.12rem solid var(--dark-color);
+    border: 2px solid var(--dark-color);
 }
 
 .nav > ul > li > a {
@@ -354,6 +354,37 @@ hr {
     width: 80%;
 }
 
+/* SCHEDULE */
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-top-bottom) var(--padding-left-right);
+}
+
+.schedule ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.schedule li {
+  padding: 0 20px;
+  border: 2px solid black;
+}
+
+.schedule__speaker {
+  display: flex;
+}
+
+.schedule__speaker-img div {
+  width: 300px;
+}
+
+.schedule__speaker-bio {
+  margin-left: 20px;
+}
+
 /* VENUE */
 
 .venue {
@@ -424,7 +455,7 @@ hr {
     margin-left: 0.8rem;
     top: 1rem;
     width: 100%;
-} 
+}
 
 .speaker-text {
     margin-top: 1.4rem;

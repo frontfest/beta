@@ -1,59 +1,33 @@
 <footer class="footer">
 
-    <nav class="footer-nav nav">
-        <ul>
-            <li><a target="_blank" rel="noopener" href="https://twitter.com/{{ site.username }}">Twitter</a></li>
-            <li><a target="_blank" rel="noopener" href="https://youtube.com/{{ site.username }}">YouTube</a></li>
-            <li><a target="_blank" rel="noopener" href="https://github.com/{{ site.username }}/">GitHub</a></li>
-            <li><a target="_blank" rel="noopener" href="https://t.me/{{ site.username }}">Telegram</a></li>
-            <li><a target="_blank" rel="noopener" href="mailto:{{ site.email }}">Email</a></li>
-        </ul>
-    </nav>
+  <nav class="footer-nav nav">
+    <ul>
+      <li><a target="_blank" rel="noopener" href="https://twitter.com/{{ site.username }}">Twitter</a></li>
+      <li><a target="_blank" rel="noopener" href="https://youtube.com/{{ site.username }}">YouTube</a></li>
+      <li><a target="_blank" rel="noopener" href="https://github.com/{{ site.username }}/">GitHub</a></li>
+      <li><a target="_blank" rel="noopener" href="https://t.me/{{ site.username }}">Telegram</a></li>
+      <li><a target="_blank" rel="noopener" href="mailto:{{ site.email }}">Email</a></li>
+    </ul>
+  </nav>
 
-    <div class="footer-div">
+  <div class="footer-div">
 
-        <div class="footer-div-left">
-            <h2>FrontFest 2020 <small> 4ª edición</small></h2>
+    <div class="footer-div-left">
+      <h2>FrontFest 2020 <small> 4ª edición</small></h2>
 
-            <p>
-                <a href="https://2017.frontfest.es">2017</a> /
-                <a href="https://2018.frontfest.es">2018</a> /
-                <a href="https://2019.frontfest.es">2019</a>
-            </p>
-        </div>
-
-        <div class="footer-div-right">
-            <a href="{{ '/' | relative_url }}">
-                <img src="{{ '/assets/img/frontfest.svg' | relative_url }}">
-            </a>
-        </div>
-
-
-
-
-        <!-- <div class="footer-col-wrapper">
-        <div class="footer-col one-half">
-            <ul class="contact-list">
-            <li class="p-name">
-                {%- if site.author -%}
-                {{ site.author | escape }}
-                {%- endif -%}
-                </li>
-                {%- if site.email -%}
-                <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                {%- endif -%}
-            </ul>
-        </div>
-    
-        <div class="footer-col one-half">
-            <p>{{- site.description | escape -}}</p>
-        </div>
-    
-        <div class="social-links">
-            {%- include social.html -%}
-        </div>
-        </div> -->
-    
+      <p>
+        <a href="https://2017.frontfest.es">2017</a> /
+        <a href="https://2018.frontfest.es">2018</a> /
+        <a href="https://2019.frontfest.es">2019</a>
+      </p>
     </div>
-    
+
+    <div class="footer-div-right">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/img/frontfest.svg' | relative_url }}">
+      </a>
+    </div>
+
+  </div>
+
 </footer>

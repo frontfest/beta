@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<section class="schedule">
+  <div>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.time }}</p>
+    {% for d in page.desc %}
+      <p>{{ d }}</p>
+    {% endfor %}
+    <div>
+      {% for speaker in page.speakers %}
+      <h3>{{ speaker.name }}</h3>
+      <div class="schedule__speaker">
+        <div class="schedule__speaker-img speaker-pic">
+          <div class="speaker-pic-img">
+            <img src="{{ '/assets/img/speakers/' | relative_url }}{{ speaker.pic }}">
+          </div>
+        </div>
+        <div class="schedule__speaker-bio">
+          {% for b in speaker.bio %}
+            <p>{{ b }}</p>
+          {% endfor %}
+          {% if speaker.sn.twitter %}
+            <p>{{speaker.sn.twitter}}</p>
+          {% endif %}
+          {% if speaker.sn.github %}
+            <p>{{speaker.sn.github}}</p>
+          {% endif %}
+          {% if speaker.sn.blog %}
+            <p>{{speaker.sn.blog}}</p>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

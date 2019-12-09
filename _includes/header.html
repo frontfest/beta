@@ -1,21 +1,21 @@
 <header>
-    
-    <div class="header-inner">
-        <div class="header-inner-left">
-            <div class="claim">
-                <div><a href="{{ '/' | relative_url }}">{{ site.description }}</a></div>
-            </div>
-        </div>
 
-        <div class="header-inner-right">
-            <div>
-                <a target="_blank" rel="noopener" href="https://twitter.com/search?q=%23FrontFest20&src=typed_query">{{ site.hashtag }}</a>
-            </div>
-        </div>
+  <div class="header-inner">
+    <div class="header-inner-left">
+      <div class="claim">
+        <div><a href="{{ '/' | relative_url }}">{{ site.description }}</a></div>
+      </div>
     </div>
 
-    <div class="nav-wrapper">
-        {%- include nav.html -%}
+    <div class="header-inner-right">
+      <div>
+        <a target="_blank" rel="noopener" href="https://twitter.com/search?q=%23FrontFest20&src=typed_query">{{ site.hashtag }}</a>
+      </div>
     </div>
-    
+  </div>
+
+  <div class="nav-wrapper">
+    {%- include nav.html -%}
+  </div>
+
 </header>

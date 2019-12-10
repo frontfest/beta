@@ -8,7 +8,7 @@ permalink: /schedule/
   <ul>
     {% for talk in site.talks %}
       <li>
-        <p>{{ talk.time }}</p>
+        <p>{{ talk.time.start }} - {{ talk.time.end }}</p>
         <div>
           {% if talk.desc %}
             <a href="{{ talk.url }}"><h2>{{ talk.title }}</h2></a>

@@ -5,13 +5,12 @@ layout: default
 <section class="schedule">
   <div>
     <h1>{{ page.title }}</h1>
-    <p>{{ page.time }}</p>
+    <p>{{ page.time.start }} - {{ page.time.end }}</p>
     {% for d in page.desc %}
       <p>{{ d }}</p>
     {% endfor %}
     <div>
       {% for speaker in page.speakers %}
-      <h3>{{ speaker.name }}</h3>
       <div class="schedule__speaker">
         <div class="schedule__speaker-img speaker-pic">
           <div class="speaker-pic-img">
@@ -19,17 +18,39 @@ layout: default
           </div>
         </div>
         <div class="schedule__speaker-bio">
+          <h3>{{ speaker.name }}</h3>
           {% for b in speaker.bio %}
             <p>{{ b }}</p>
           {% endfor %}
           {% if speaker.sn.twitter %}
-            <p>{{speaker.sn.twitter}}</p>
+            <a target="_blank" href="https://twitter.com/{{speaker.sn.twitter}}">
+              <p>@{{speaker.sn.twitter}}</p>
+            </a>
           {% endif %}
           {% if speaker.sn.github %}
-            <p>{{speaker.sn.github}}</p>
+            <a target="_blank" href="https://github.com/{{speaker.sn.github}}">
+              <p>{{speaker.sn.github}}</p>
+            </a>
           {% endif %}
-          {% if speaker.sn.blog %}
-            <p>{{speaker.sn.blog}}</p>
+          {% if speaker.sn.instagram %}
+            <a target="_blank" href="https://instagram.com/{{speaker.sn.instagram}}">
+              <p>{{speaker.sn.instagram}}</p>
+            </a>
+          {% endif %}
+          {% if speaker.sn.medium %}
+            <a target="_blank" href="https://medium.com/@{{speaker.sn.medium}}">
+              <p>{{speaker.sn.medium}}</p>
+            </a>
+          {% endif %}
+          {% if speaker.sn.linkedin %}
+            <a target="_blank" href="https://www.linkedin.com/in/{{speaker.sn.linkedin}}">
+              <p>{{speaker.sn.linkedin}}</p>
+            </a>
+          {% endif %}
+          {% if speaker.sn.web %}
+            <a target="_blank" href="{{speaker.sn.web}}">
+              <p>{{speaker.sn.web}}</p>
+            </a>
           {% endif %}
         </div>
       </div>

@@ -14,11 +14,11 @@ time:
   start: "09:45"
   end: "10:30"
 speakers:
-- name: Elizabeth Rodriguez
+- name: Elizabeth Rodríguez
   headline: Frontend, master of keyboards
   pic: eli-rodriguez.jpg
   bio:
-    - Frontend en Sngular, maga de los teclados y vim lover. Activista LGTB
+    - Frontend en Sngular, maga de los teclados y Vim lover. Activista LGTB.
   sn:
     twitter: elirp95
 - name: Jon Rojí

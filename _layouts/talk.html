@@ -5,7 +5,11 @@ layout: default
 <section class="schedule">
   <div>
     <h1>{{ page.title }}</h1>
-    <p>{{ page.time.start }} - {{ page.time.end }}</p>
+    <div class="schedule__time">
+      <span>
+        {{ page.time.start }} - {{ page.time.end }}
+      </span>
+    </div>
     {% for d in page.desc %}
       <p>{{ d }}</p>
     {% endfor %}
@@ -18,38 +22,38 @@ layout: default
           </div>
         </div>
         <div class="schedule__speaker-bio">
-          <h3>{{ speaker.name }}</h3>
+          <h2>{{ speaker.name }}</h2>
           {% for b in speaker.bio %}
             <p>{{ b }}</p>
           {% endfor %}
           {% if speaker.sn.twitter %}
             <a target="_blank" href="https://twitter.com/{{speaker.sn.twitter}}">
-              <p>@{{speaker.sn.twitter}}</p>
+              <img src="{{ '/assets/img/sn/twitter.svg' | relative_url }}">
             </a>
           {% endif %}
           {% if speaker.sn.github %}
             <a target="_blank" href="https://github.com/{{speaker.sn.github}}">
-              <p>{{speaker.sn.github}}</p>
+              <img src="{{ '/assets/img/sn/github.svg' | relative_url }}">
             </a>
           {% endif %}
           {% if speaker.sn.instagram %}
             <a target="_blank" href="https://instagram.com/{{speaker.sn.instagram}}">
-              <p>{{speaker.sn.instagram}}</p>
-            </a>
-          {% endif %}
-          {% if speaker.sn.medium %}
-            <a target="_blank" href="https://medium.com/@{{speaker.sn.medium}}">
-              <p>{{speaker.sn.medium}}</p>
+              <img src="{{ '/assets/img/sn/instagram.svg' | relative_url }}">
             </a>
           {% endif %}
           {% if speaker.sn.linkedin %}
             <a target="_blank" href="https://www.linkedin.com/in/{{speaker.sn.linkedin}}">
-              <p>{{speaker.sn.linkedin}}</p>
+              <img src="{{ '/assets/img/sn/linkedin.svg' | relative_url }}">
+            </a>
+          {% endif %}
+          {% if speaker.sn.medium %}
+            <a target="_blank" href="https://medium.com/@{{speaker.sn.medium}}">
+              <img src="{{ '/assets/img/sn/medium.svg' | relative_url }}">
             </a>
           {% endif %}
           {% if speaker.sn.web %}
             <a target="_blank" href="{{speaker.sn.web}}">
-              <p>{{speaker.sn.web}}</p>
+              <img src="{{ '/assets/img/sn/web.svg' | relative_url }}">
             </a>
           {% endif %}
         </div>

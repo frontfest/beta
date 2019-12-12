@@ -21,6 +21,6 @@ speakers:
   sn:
     twitter: lenatwitteada
     instagram: ashlerdesign
-    web: www.ashler.design
+    web: https://www.ashler.design
 
 ---

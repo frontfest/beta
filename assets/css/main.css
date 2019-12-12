@@ -373,16 +373,51 @@ hr {
   border: 2px solid black;
 }
 
+.schedule__time {
+  margin: 24px 0 32px 0;
+}
+
+.schedule__time span {
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 12px 12px 8px 12px;
+}
+
 .schedule__speaker {
+  margin-top: 40px;
   display: flex;
+  flex-direction: column;
+}
+
+.schedule__speaker h2 {
+  margin-top: 40px;
+}
+
+@media (min-width: 48rem) {
+  .schedule__speaker {
+      flex-direction: row;
+  }
+  .schedule__speaker h2 {
+    margin-top: 0;
+  }
+  .schedule__speaker-bio {
+    margin-left: 40px;
+  }
 }
 
 .schedule__speaker-img div {
   width: 300px;
 }
 
-.schedule__speaker-bio {
-  margin-left: 20px;
+
+
+.schedule__speaker-bio a {
+  text-decoration: none;
+}
+
+.schedule__speaker-bio img {
+  width: 40px;
 }
 
 /* VENUE */

@@ -100,6 +100,13 @@ h2 {
     font-family: var(--title-font);
 }
 
+h3 {
+  color: var(--dark-color);
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: var(--title-font);
+}
+
 html {
     font-size: var(--font-relative-size);
 }
@@ -362,26 +369,42 @@ hr {
   padding: var(--padding-top-bottom) var(--padding-left-right);
 }
 
-.schedule ul {
+.schedule ul.schedule__table {
+  margin-top: 40px 0 0 0;
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
 .schedule li {
-  padding: 0 20px;
-  border: 2px solid black;
+  display: flex;
+}
+
+.schedule__author {
+  margin: 5px 0;
+  font-size: 1.6rem;
 }
 
 .schedule__time {
   margin: 24px 0 32px 0;
 }
 
-.schedule__time span {
+.schedule__time span,
+.schedule__time div {
+  white-space: nowrap;
   background: black;
   color: white;
   font-weight: bold;
   padding: 12px 12px 8px 12px;
+}
+
+.schedule__data {
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.schedule__data h3 {
+  margin-top: 5px;
 }
 
 .schedule__speaker {
@@ -498,6 +521,7 @@ hr {
 
 .speaker-text p {
     margin: 0.8rem 0;
+    text-decoration: none;
 }
 
 

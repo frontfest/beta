@@ -2,7 +2,7 @@
 layout: talk
 permalink: adria-fontcuberta
 
-title: The art of front-end architecture
+title: The Art of Front-end Architecture
 desc:
   - ... o cómo darse cuenta de que el desarrollo front-end es desarrollo de software.
   - En mi día a día hago lo que puedo creando aplicaciones web "complejas". Aquí voy a compartir lo que he aprendido intentado que sean mantenibles, escalables, y agnósticas del framework.

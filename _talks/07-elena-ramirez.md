@@ -4,7 +4,7 @@ permalink: elena-ramirez
 
 title: Tipografía para frontends
 desc:
-  - Un poco de font-size por aquí un poco de line-height por allá y ya tenemos listo los textos de la interfaz, ¿no? Pues no. Cuando se trata de trabajar la tipografía de una web o aplicación los frontends solemos realizar lo ajustes básicos. Sin embargo las tipografías que usamos pueden ser herramientas muy potentes –cada vez más– que permiten un nivel de detalle superior. Conocerlas y saber lo que podemos hacer con ellas es fundamental para mejorar la calidad de los contenidos y la experiencia del usuario. Hace tiempo que lo que se puede hacer con la tipo en web superó con creces a lo que hacemos.
+  - Como encargados de que las interfaces que desarrollamos tengan la mejor experiencia de usuario, los frontends tenemos que conocer a fondo todas las herramientas de las que disponemos. La tipografía es una de esas herramientas y a veces las utilizamos muy por debajo de sus posibilidades. Esta charla es un recorrido desde las bases de la tipografía aplicada a la web, hasta el uso de las ya imparables variables fonts. Veremos cómo usar tipografía responsive, y componer textos equilibrados, así como otras técnicas de fácil aplicación pero que nos ayudarán a elevar el nivel de acabados de las interfaces que creamos.
 tags:
   - Tipografía web
   - CSS

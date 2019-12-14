@@ -322,44 +322,93 @@ hr {
     }
 }
 
+
 /* SPONSORS */
 
 .sponsors {
-    padding: var(--padding-top-bottom) var(--padding-left-right);
+  padding: var(--padding-top-bottom) var(--padding-left-right);
 }
 
 .sponsors h2 {
-    margin-top: 20px;
+  margin-top: 1.4rem;
 }
 
-.sponsors .sponsors-grid {
-    margin: 30px 0;
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    gap: 40px 10%;
-    justify-items: center;
-    align-items: center;
+.sponsor-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sponsor-platinum {
+  background: white;
+  width: 290px;
+  max-width: 100%;
+  height: 130px;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px 10px 0;
+}
+.sponsor-platinum img {
+  width: 85%;
+}
+.sponsor-gold {
+  background: white;
+  width: 260px;
+  max-width: 100%;
+  height: 110px;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px 10px 0;
+}
+.sponsor-gold img {
+  width: 80%;
+}
+.sponsor-gold .width-60 {
+  width: 60%;
+}
+.sponsor-gold .width-75 {
+  width: 75%;
+}
+.sponsor-gold .width-85 {
+  width: 85%;
+}
+.sponsor-silver {
+  background: white;
+  width: 230px;
+  max-width: 100%;
+  height: 90px;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px 10px 0;
+}
+.sponsor-silver img {
+  width: 80%;
+}
+.sponsor-silver .width-60 {
+  width: 60%;
+}
+.sponsor-inkind {
+  background: white;
+  width: 200px;
+  max-width: 100%;
+  height: 70px;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px 10px 0;
+}
+.sponsor-inkind img {
+  width: 80%;
+}
+.sponsor-inkind .width-70 {
+  width: 70%;
 }
 
-@media (min-width: 36em) {
-    .sponsors .sponsors-grid {
-        grid-template-columns: repeat(2, 45%);
-    }
-}
-
-.sponsors .sponsors-grid a {
-    border: 4px solid black;
-    background: white;
-    width: 100%;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sponsors .sponsors-grid img {
-    width: 80%;
-}
 
 /* SCHEDULE */
 

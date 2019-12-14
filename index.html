@@ -3,7 +3,7 @@ layout: main
 permalink: /
 ---
 
-<div class="big-intro">
+<section class="big-intro">
 
   {%- include header.html -%}
 
@@ -24,9 +24,9 @@ permalink: /
     </div>
   </div>
 
-</div>
+</section>
 
-<div class="about">
+<section class="about">
   <h1>Qué es FrontFest</h1>
   <p>FrontFest es un evento anual y sin ánimo de lucro. Está organizado y gestionado por un equipo de voluntarios y voluntarias que pertenecen a la comunidad de desarrollo frontend.
       Celebrado por primera vez en 2017, pretende ser un punto de encuentro a nivel nacional, principalmente en castellano, para todas aquellas personas interesadas
@@ -38,22 +38,47 @@ permalink: /
       para que las personas con movilidad reducida o discapacidad visual, auditiva y otras puedan disfrutar del evento en igualdad de condiciones.</p>
   <p>Por favor, haznos llegar cualquier sugerencia, pregunta o duda a través de nuestro <a href="mailto:frontfest@gmail.com">email</a> o de nuestra cuenta de <a href="https://twitter.com/frontfest">Twitter</a>.</p>
   <p>¡Os esperamos!</p>
-</div>
+</section>
 
 <hr>
 
-<div class="sponsors">
-  <h1>Patrocinadores</h1>
+<section class="sponsors">
+  <h1 id="patrocinadores">Patrocinadores</h1>
   <h2>Platinum</h2>
-  <div class="sponsors-grid">
+  <div class="sponsor-row">
     <a target="_blank" href="https://www.paradigmadigital.com/">
-      <img src="{{ '/assets/img/sponsors/paradigma.png' | relative_url }}">
+      <div class="sponsor-platinum">
+        <img alt="Paradigma Digital" src="{{ '/assets/img/sponsors/paradigma.png' | relative_url }}">
+      </div>
     </a>
     <a target="_blank" href="https://www.plainconcepts.com/">
-      <img src="{{ '/assets/img/sponsors/plain-concepts.png' | relative_url }}">
+      <div class="sponsor-platinum">
+        <img alt="Plain Concepts" src="{{ '/assets/img/sponsors/plain-concepts.png' | relative_url }}">
+      </div>
     </a>
   </div>
-</div>
+  <h2>Gold</h2>
+  <div class="sponsor-row">
+    <a target="_blank" href="https://www.kairosds.com/">
+      <div class="sponsor-gold">
+        <img alt="Kairos DS" src="{{ '/assets/img/sponsors/kairos.svg' | relative_url }}">
+      </div>
+    </a>
+    <a target="_blank" href="https://www.ing.es/">
+      <div class="sponsor-gold">
+        <img alt="ING" src="{{ '/assets/img/sponsors/ing.svg' | relative_url }}">
+      </div>
+    </a>
+  </div>
+  <h2>En especies</h2>
+  <div class="sponsor-row">
+    <a class="no-border" target="_blank" href="https://www.stickermule.com/">
+      <div class="sponsor-inkind">
+        <img alt="Sticker Mule" src="{{ '/assets/img/sponsors/stickermule.svg' | relative_url }}">
+      </div>
+    </a>
+  </div>
+</section>
 
 <!-- <div class="big-menu">
   <ol>
@@ -67,7 +92,7 @@ permalink: /
 
 <hr>
 
-<div class="venue">
+<section class="venue">
   <div class="venue-left">
     <h1>Localización</h1>
     <p>FrontFest 2020 tendrá lugar en el <strong>Espacio CTO</strong>. Está situado en la <strong>Calle Albarracín 34</strong> (distrito de San Blas-Canillejas), a escasos metros de la estación de metro de Ciudad Lineal (L5).</p>
@@ -81,5 +106,5 @@ permalink: /
       <img src="{{ '/assets/img/cto.jpg' | relative_url }}">
     </div>
   </div>
-</div>
+</section>
 

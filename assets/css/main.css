@@ -375,8 +375,13 @@ hr {
   padding: 0;
 }
 
+.schedule__tags {
+  margin-top: 8px;
+}
+
 .schedule li {
   display: flex;
+  border-bottom: 4px solid black;
 }
 
 .schedule__author {
@@ -388,13 +393,18 @@ hr {
   margin: 24px 0 32px 0;
 }
 
-.schedule__time span,
-.schedule__time div {
+.schedule__time > span,
+.schedule__time > div {
   white-space: nowrap;
   background: black;
   color: white;
   font-weight: bold;
   padding: 12px 12px 8px 12px;
+}
+
+.schedule__time > span > span,
+.schedule__time > div > span {
+  padding: 0 3px;
 }
 
 .schedule__data {

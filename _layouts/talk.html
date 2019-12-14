@@ -5,9 +5,12 @@ layout: default
 <section class="schedule">
   <div>
     <h1>{{ page.title }}</h1>
+    <div class="schedule__tags">
+      <strong>{% for tag in page.tags %}{{ tag | upcase }}{% if page.tags.last != tag %}, {% endif %}{% endfor %}</strong>
+    </div>
     <div class="schedule__time">
       <span>
-        {{ page.time.start }} - {{ page.time.end }}
+        {{ page.time.start }}<span>-</span>{{ page.time.end }}
       </span>
     </div>
     {% for d in page.desc %}

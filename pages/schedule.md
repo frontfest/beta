@@ -10,7 +10,7 @@ permalink: /schedule/
     {% for talk in site.talks %}
       {% if talk.desc %}
         <li>
-          <div class="schedule__time"><div>{{ talk.time.start }} - {{ talk.time.end }}</div></div>
+          <div class="schedule__time"><div>{{ talk.time.start }}<span>-</span>{{ talk.time.end }}</div></div>
           <div class="schedule__data">
             <a href="{{ talk.url }}"><h2>{{ talk.title }}</h2></a>
             {% for speaker in talk.speakers %}
@@ -20,7 +20,7 @@ permalink: /schedule/
         </li>
       {% else %}
         <li>
-          <div class="schedule__time"><span>{{ talk.time.start }} - {{ talk.time.end }}</span></div>
+          <div class="schedule__time"><span>{{ talk.time.start }}<span>-</span>{{ talk.time.end }}</span></div>
           <div class="schedule__data">
             <h3>{{ talk.title }}</h3>
           </div>

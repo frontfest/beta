@@ -4,7 +4,7 @@ permalink: sonia-ruiz
 
 title: Arte generativo con CSS
 desc:
-  - ¿Sabías que a través del arte generativo podemos generar obras autónomas a partir de un algoritmo? En esta charla vamos a aprender cómo utilizar CSS para crear arte, de la mano de <css-doodle>, un Web Component para dibujar patrones que pensarías que son imposibles de hacer con CSS.
+  - '¿Sabías que a través del arte generativo podemos generar obras autónomas a partir de un algoritmo? En esta charla vamos a aprender cómo utilizar CSS para crear arte, de la mano de &lt;css-doodle /&gt, un Web Component para dibujar patrones que pensarías que son imposibles de hacer con CSS.'
 tags:
   - CSS
   - Arte

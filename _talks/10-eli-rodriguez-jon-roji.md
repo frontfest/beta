@@ -11,8 +11,8 @@ tags:
   - Typescript
   - Data management
 time:
-  start: "09:45"
-  end: "10:30"
+  start: "15:50"
+  end: "16:35"
 speakers:
 - name: Elizabeth Rodríguez
   headline: Frontend, master of keyboards

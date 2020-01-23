@@ -12,8 +12,8 @@ tags:
   - HTML
   - CSS
 time:
-  start: "15:50"
-  end: "16:35"
+  start: "09:45"
+  end: "10:30"
 speakers:
 - name: Sergio Contreras
   headline: Web Frontend advocate and amateur triathlete / GDE Web Technologies

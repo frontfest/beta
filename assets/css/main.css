@@ -405,6 +405,11 @@ hr {
 .sponsor-inkind img {
   width: 80%;
 }
+
+.sponsor-inkind .width-45 {
+    width: 45%;
+}
+
 .sponsor-inkind .width-70 {
   width: 70%;
 }

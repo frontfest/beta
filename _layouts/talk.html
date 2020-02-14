@@ -16,6 +16,12 @@ layout: default
     {% for d in page.desc %}
       <p>{{ d }}</p>
     {% endfor %}
+    {% if page.slides %}
+      <div class="download-slides">
+        <img src="{{ '/assets/img/slides.svg' | relative_url }}">
+        <a target="_blank" href="{{ page.slides | relative_url }}">Descarga la presentación</a>
+      </div>
+    {% endif %}
     <div>
       {% for speaker in page.speakers %}
       <div class="schedule__speaker">

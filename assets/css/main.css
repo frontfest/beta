@@ -743,3 +743,15 @@ hr {
 .big-intro .header-inner .header-inner-left .claim div a {
     color: var(--light-color);
 }
+
+.download-slides {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.download-slides img {
+  width: 32px;
+  margin-right: 10px;
+}

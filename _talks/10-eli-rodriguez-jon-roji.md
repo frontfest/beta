@@ -28,5 +28,5 @@ speakers:
     - Frontend en Sngular, adicto al cacharreo con todo tipo de tecnologías y todo aquello que se programe. Fan de la formación bien hecha. Me gustan los unicornios.
   sn:
     twitter: jnroji
-
+slides: /assets/slides/Eli-Jon_Mi-Componente-Mis-Normas_FrontFest20.pdf
 ---

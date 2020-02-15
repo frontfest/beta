@@ -23,5 +23,5 @@ speakers:
   sn:
     twitter: sergicontre
     github: sergicontre
-
+slides: https://docs.google.com/presentation/d/19VutTISoPY0SlCCmWKBbsSHQv6EPmzkpFUxzdD-74lY/present
 ---

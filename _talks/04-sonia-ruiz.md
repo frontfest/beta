@@ -21,5 +21,5 @@ speakers:
     twitter: Yune__vk
     github: yunevk
     linkedin: Sonia Ruiz Cayuela
-
+slides: https://slides.com/yunevk/arte-generativo-css/fullscreen
 ---

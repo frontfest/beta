@@ -27,5 +27,5 @@ speakers:
     linkedin: aidaalbarran
     medium: Aida_Pro_
     web: https://alienah.github.io/
-
+slides: /assets/slides/Aida_Primitive-Obsession_FrontFest20.pdf
 ---

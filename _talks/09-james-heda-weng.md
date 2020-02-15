@@ -20,5 +20,5 @@ speakers:
   sn:
     twitter: jameshedaweng
     linkedin: jameshedaweng
-
+slides: /assets/slides/James_Welcome-to-the-dark-side_FrontFest20.pdf
 ---

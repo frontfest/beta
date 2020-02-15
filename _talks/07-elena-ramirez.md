@@ -22,5 +22,5 @@ speakers:
     twitter: lenatwitteada
     instagram: ashlerdesign
     web: https://www.ashler.design
-
+slides: https://www.dropbox.com/s/csuzuivq8httdde/type-is-for-frontend.pdf?dl=0
 ---

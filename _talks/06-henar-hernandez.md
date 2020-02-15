@@ -24,5 +24,5 @@ speakers:
   sn:
     twitter: HenarMendiola
     github: Maritxis
-
+slides: https://slides.com/henarhernandez/deck-f8d119/fullscreen
 ---

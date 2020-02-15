@@ -23,5 +23,5 @@ speakers:
   sn:
     twitter: afontq
     web: https://afontcu.dev
-
+slides: /assets/slides/Adria_The-Art-of-Front-end-Architecture_FrontFest20.pdf
 ---
